@@ -867,3 +867,18 @@
     .newsletter-input:focus { border-color: var(--gold); }
     .newsletter-input::placeholder { color: var(--gray); }
   
+
+
+.cat-btn {
+  border: 2px solid;
+  padding: 5px 10px;
+  color: rgba(201,168,76,0.3) ;
+  text-decoration: none;   /* underline remove */
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.cat-btn:hover {
+  background: rgba(201,168,76,0.3) ;
+  color: #947216  ;
+}
