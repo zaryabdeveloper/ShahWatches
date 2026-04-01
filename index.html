@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHAH WATCHES – Luxury Timepieces</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="images/wrist-watch.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     WHATSAPP FLOATING BUTTON
+═══════════════════════════════════════════ -->
+<a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+<div class="whatsapp-tooltip">Chat on WhatsApp</div>
+
+<!-- BACK TO TOP -->
+<div id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-chevron-up"></i>
+</div>
+
+<!-- ════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">SHAH <span>WATCHES</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="collection.html">Collections</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-badge">Est. 2010 · Karachi, Pakistan</div>
+        <h1 class="hero-title mb-3">
+          <span class="outline-text">Time</span><br>
+          Crafted<br>
+          <span class="gold">To Perfection</span>
+        </h1>
+        <p class="hero-subtitle mb-4">Luxury Timepieces for Every Occasion</p>
+        <p class="text-muted mb-4" style="font-size:0.9rem; max-width:460px; line-height:1.8; color:var(--gray) !important;">
+          Discover our curated collection of premium watches — from timeless classics to cutting-edge smartwatches. Each piece tells a story.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="shop.html" class="btn btn-gold"><span>Explore Collection</span></a>
+          <a href="compare.html" class="btn btn-gold"><span>Compare Watches</span></a>
+        </div>
+      </div>
+      <div class="col-lg-6 hero-watch-visual">
+        <div class="watch-ring" id="watchRing">
+          <div class="watch-face" id="watchFace">
+            <div class="tick-marks" id="tickMarks"></div>
+            <div class="watch-hand-hour" id="hourHand"></div>
+            <div class="watch-hand-min" id="minHand"></div>
+            <div class="watch-hand-sec" id="secHand"></div>
+            <div class="watch-center-dot"></div>
+            <div class="watch-crown"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     STATS
+═══════════════════════════════════════════ -->
+<section id="stats">
+  <div class="container">
+    <div class="row text-center g-0">
+      <div class="col-6 col-md-3 fade-up">
+        <div class="stat-item">
+          <div class="stat-number" data-count="500">0</div>
+          <div class="stat-label">Watches in Stock</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up" style="transition-delay:0.1s">
+        <div class="stat-item">
+          <div class="stat-number" data-count="15000">0</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up" style="transition-delay:0.2s">
+        <div class="stat-item">
+          <div class="stat-number" data-count="50">0</div>
+          <div class="stat-label">Premium Brands</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up" style="transition-delay:0.3s">
+        <div class="stat-item">
+          <div class="stat-number" data-count="14">0</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">SHAH WATCHES</div>
+        <div class="footer-tagline">Luxury Timepieces · Karachi, Pakistan</div>
+        <p style="color:var(--gray); font-size:0.83rem; line-height:1.8; margin-top:1rem; max-width:300px;">
+          Your trusted destination for authentic, premium watches since 2010. Where every second counts.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="social-link"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/923001234567" target="_blank" class="social-link"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.tiktok.com/" class="social-link"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.youtube.com/feed/homepage" class="social-link"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-heading">Collections</div>
+        <ul class="footer-links">
+          <li><a href="#categories">Formal Watches</a></li>
+          <li><a href="#categories">Casual Watches</a></li>
+          <li><a href="#categories">Sports Watches</a></li>
+          <li><a href="#categories">Smartwatches</a></li>
+          <li><a href="#categories">Ladies Watches</a></li>
+          <li><a href="#categories">Kids Watches</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-heading">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-heading">Customer Support</div>
+        <ul class="footer-links">
+          <li><a href="#">Warranty Policy</a></li>
+          <li><a href="#">Return & Exchange</a></li>
+          <li><a href="#">Watch Servicing</a></li>
+          <li><a href="#">Authenticity Guarantee</a></li>
+          <li><a href="#">Corporate Enquiries</a></li>
+        </ul>
+        <div class="mt-3">
+          <a href="https://wa.me/923001234567" target="_blank" class="btn-whatsapp d-inline-flex" style="width:auto; padding: 0.6rem 1.4rem;">
+            <i class="bi bi-whatsapp"></i> WhatsApp Us Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Shah Watches. All Rights Reserved.</p>
+      <p>Crafted with ❤️ in Karachi, Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════════════ -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
