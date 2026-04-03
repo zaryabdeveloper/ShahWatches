@@ -309,9 +309,6 @@ $('#contactForm .form-control-dark').on('input change', function() {
 
 
 
-const nav = document.getElementById("mainNav");
-const toggler = document.querySelector(".navbar-toggler");
-const menu = document.querySelector(".navbar-collapse");
 
 // Hamburger click
 toggler.addEventListener("click", () => {
@@ -333,3 +330,15 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+
+
+
+
+
+  const nav = document.getElementById("mainNav");
+  const toggler = document.querySelector(".navbar-toggler");
+
+  toggler.addEventListener("click", function () {
+    nav.classList.toggle("menu-open");
+  });
