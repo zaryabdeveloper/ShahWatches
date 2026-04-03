@@ -311,34 +311,75 @@ $('#contactForm .form-control-dark').on('input change', function() {
 
 
 // Hamburger click
-toggler.addEventListener("click", () => {
-  nav.classList.toggle("menu-open");
-});
+// toggler.addEventListener("click", () => {
+//   nav.classList.toggle("menu-open");
+// });
 
-// Jab menu close ho
-menu.addEventListener("hidden.bs.collapse", () => {
-  nav.classList.remove("menu-open");
-});
+// // Jab menu close ho
+// menu.addEventListener("hidden.bs.collapse", () => {
+//   nav.classList.remove("menu-open");
+// });
 
-// Scroll logic (fixed)
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    nav.classList.add("menu-open");
-  } else {
-    if (!menu.classList.contains("show")) {
-      nav.classList.remove("menu-open");
-    }
-  }
-});
-
-
+// // Scroll logic (fixed)
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 50) {
+//     nav.classList.add("menu-open");
+//   } else {
+//     if (!menu.classList.contains("show")) {
+//       nav.classList.remove("menu-open");
+//     }
+//   }
+// });
 
 
 
+
+
+
+//   const nav = document.getElementById("mainNav");
+//   const toggler = document.querySelector(".navbar-toggler");
+
+//   toggler.addEventListener("click", function () {
+//     nav.classList.toggle("menu-open");
+//   });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
 
   const nav = document.getElementById("mainNav");
   const toggler = document.querySelector(".navbar-toggler");
+  const menu = document.querySelector(".navbar-collapse");
 
-  toggler.addEventListener("click", function () {
-    nav.classList.toggle("menu-open");
-  });
+  if (toggler) {
+    toggler.addEventListener("click", () => {
+      nav.classList.toggle("menu-open");
+    });
+  }
+
+  if (menu) {
+    menu.addEventListener("hidden.bs.collapse", () => {
+      nav.classList.remove("menu-open");
+    });
+  }
+
+});document.addEventListener("DOMContentLoaded", function () {
+
+  const nav = document.getElementById("mainNav");
+  const toggler = document.querySelector(".navbar-toggler");
+  const menu = document.querySelector(".navbar-collapse");
+
+  if (toggler) {
+    toggler.addEventListener("click", () => {
+      nav.classList.toggle("menu-open");
+    });
+  }
+
+  if (menu) {
+    menu.addEventListener("hidden.bs.collapse", () => {
+      nav.classList.remove("menu-open");
+    });
+  }
+
+});

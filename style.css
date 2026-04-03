@@ -248,10 +248,16 @@
   }
 }
 
+
+#mainNav.menu-open {
+  background: #000000 !important;
+}
+
+
     /* ── HERO ── */
     #hero {
       min-height: 100vh;
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #0a0a0a 100%);
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, hsl(0, 0%, 4%) 100%);
       position: relative;
       display: flex; align-items: center;
       overflow: hidden;
