@@ -175,6 +175,79 @@
     .navbar-toggler { border-color: var(--gold); }
     .navbar-toggler-icon { filter: invert(1); }
 
+
+
+
+
+
+    .navbar-toggler {
+  border: 2px solid var(--gold);
+  width: 45px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Icon */
+.custom-toggler {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: var(--gold);
+  display: block;
+}
+
+/* Top Line */
+.custom-toggler::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--gold);
+  top: -7px;
+  left: 0;
+}
+
+/* Bottom Line */
+.custom-toggler::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--gold);
+  top: 7px;
+  left: 0;
+}
+
+
+
+.navbar-toggler-icon {
+  display: none !important;
+}
+
+
+
+@media (max-width: 991px) {
+  #mainNav {
+    background: transparent;
+    transition: 0.3s;
+  }
+
+  /* 👇 jab menu open ho */
+  #mainNav.menu-open {
+    background: #000000;
+  }
+
+  /* dropdown menu */
+  #mainNav .navbar-collapse {
+    background: #000000;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
+
     /* ── HERO ── */
     #hero {
       min-height: 100vh;

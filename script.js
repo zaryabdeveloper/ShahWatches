@@ -163,10 +163,20 @@ function tick(val) {
 }
 
 function updateCompare() {
-  const w1 = watchData[$('#watch1Select').val()];
-  const w2 = watchData[$('#watch2Select').val()];
-  $('#th1').text(w1.name);
-  $('#th2').text(w2.name);
+  const val1 = $('#watch1Select').val();
+  const val2 = $('#watch2Select').val();
+
+  const w1 = watchData[val1];
+  const w2 = watchData[val2];
+
+  if (!w1 || !w2) {
+    console.warn("Select both watches first!");
+    return;
+  }
+
+  $('#th1').text(w1.name || "N/A");
+  $('#th2').text(w2.name || "N/A");
+
   const rows = [
     ['Brand', w1.brand, w2.brand],
     ['Price', w1.price, w2.price],
@@ -180,13 +190,19 @@ function updateCompare() {
     ['GPS', tick(w1.gps), tick(w2.gps)],
     ['Smart Features', tick(w1.smartFeatures), tick(w2.smartFeatures)],
   ];
+
   let html = '';
   rows.forEach(([feat, v1, v2]) => {
-    html += `<tr><td class="feature-name">${feat}</td><td>${v1}</td><td>${v2}</td></tr>`;
+    html += `<tr>
+      <td class="feature-name">${feat}</td>
+      <td>${v1 || "N/A"}</td>
+      <td>${v2 || "N/A"}</td>
+    </tr>`;
   });
+
   $('#compareTbody').html(html);
 }
-updateCompare();
+$('#watch1Select, #watch2Select').on('change', updateCompare);
 
 // ── NEWSLETTER FORM ──
 $('#newsletterForm').on('submit', function(e) {
@@ -286,3 +302,34 @@ $('#contactForm .form-control-dark').on('input change', function() {
   $(this).removeClass('is-invalid');
 });
 
+
+
+
+
+
+
+
+const nav = document.getElementById("mainNav");
+const toggler = document.querySelector(".navbar-toggler");
+const menu = document.querySelector(".navbar-collapse");
+
+// Hamburger click
+toggler.addEventListener("click", () => {
+  nav.classList.toggle("menu-open");
+});
+
+// Jab menu close ho
+menu.addEventListener("hidden.bs.collapse", () => {
+  nav.classList.remove("menu-open");
+});
+
+// Scroll logic (fixed)
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    nav.classList.add("menu-open");
+  } else {
+    if (!menu.classList.contains("show")) {
+      nav.classList.remove("menu-open");
+    }
+  }
+});
